@@ -1,4 +1,8 @@
-﻿#include <iostream>
+﻿//Felix Garcia Ceballos
+//Raul Diego Navarro
+//C36
+
+#include <iostream>
 #include <fstream>
 #include "Queue.h"
 #include <cstdlib>
@@ -39,22 +43,22 @@ bool resuelveCasoInvQ() {
 	else return false;
 }
 
-#define DOMJUDGE
+//#define DOMJUDGE
 int main() {
 	//genRandomLeq(); return 0;
 	// Para la entrada por fichero.
 	// Comentar para acepta el reto
-#ifndef DOMJUDGE
-	std::ifstream in("pruebas.txt");
-	auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
-#endif
+//#ifndef DOMJUDGE
+//	std::ifstream in("pruebas.txt");
+//	auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
+//#endif
 
 	while (resuelveCasoInvQ());
 
 	// Para restablecer entrada. Comentar para acepta el reto
-#ifndef DOMJUDGE // para dejar todo como estaba al principio
-	std::cin.rdbuf(cinbuf);
-	//system("PAUSE");
-#endif
+//#ifndef DOMJUDGE // para dejar todo como estaba al principio
+//	std::cin.rdbuf(cinbuf);
+//	//system("PAUSE");
+//#endif
 	return 0;
 }

@@ -102,7 +102,7 @@ bool resolver(string input, IPud &ipud) {
 	 }
 	 else {
 
-		 cout << "------" << endl;
+		 cout << "----" << endl;
 		 salir = true;
 	 }
 

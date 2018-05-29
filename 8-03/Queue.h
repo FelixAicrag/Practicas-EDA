@@ -66,23 +66,6 @@ public:
 		_numElems++;
 	}
 
-	void duplicateAll() {
-		//Puntero al primer elemento
-		Nodo *aux = _prim;
-		//Mientras que no apunte a null	
-		while (aux != NULL) {
-			//Nuevo nodo. Apunta donde apuntaba el nodo anterior.
-			Nodo *mnodo = new Nodo(aux->_elem, aux->_sig);
-			//El nodo anterior apunta al nodo duplicado.
-			aux->_sig = mnodo;
-			_numElems++;
-			
-			//Volvemos a empezar, apuntamos al siguiente nodo.
-			aux = mnodo->_sig;
-		}
-		if (_prim != NULL) _ult = _ult->_sig;
-	}
-
 	/**
 	 Elimina el primer elemento de la cola.
 	 Operaci�n modificadora parcial, que falla si 
